@@ -33,7 +33,7 @@ public class Main {
         stack.showStack();
     }
 }
-
+----------------------------------------------
 package com.company;
 
 import java.util.LinkedList;
@@ -65,7 +65,7 @@ public class Stack {
     }
 }
 
-
+------------------------------------------------------
 package com.company;
 
 public class Queue {
