@@ -1,0 +1,99 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        /*Queue queue = new Queue(5);
+        queue.push(4);
+        queue.push(7);
+        queue.push(3);
+        queue.showQueue();
+        int first = queue.pop();
+        queue.peek();
+        queue.showQueue();*/
+        Stack stack = new Stack();
+        stack.push("water");
+        stack.push("earth");
+        stack.push("air");
+        stack.push("fire");
+        stack.showStack();
+        System.out.println();
+        stack.pop();
+        stack.peek();
+        System.out.println();
+        stack.showStack();
+    }
+}
+
+package com.company;
+
+import java.util.LinkedList;
+
+public class Stack {
+    //Declaration of LinkedList
+    LinkedList<String> stack;
+
+    public Stack() {
+        stack = new LinkedList<>();
+    }
+
+    public void push(String value) {
+        stack.addFirst(value);
+    }
+
+    public String pop() {
+        return stack.removeFirst();
+    }
+
+    public void peek() {
+        System.out.println(stack.getFirst());
+    }
+
+    public void showStack() {
+        for (String element : stack) {
+            System.out.println(element);
+        }
+    }
+}
+
+
+package com.company;
+
+public class Queue {
+    int[] queue;
+    int front;
+    int back;
+
+    public Queue(int size) {
+        queue = new int[size];
+        front = -1;
+        back = -1;
+    }
+
+    public void push(int number) {
+        if (front == -1 && back == -1) {
+            front++;
+            back++;
+            queue[front] = number;
+        } else {
+            back++;
+            queue[back] = number;
+        }
+    }
+
+    public int pop() {
+        int temp = queue[front];
+        front++;
+        return temp;
+    }
+
+    public void peek() {
+        System.out.println("Next element for pop will be:" + queue[front]);
+    }
+
+    public void showQueue() {
+        for (int i = front; i <= back; i++) {
+            System.out.println(queue[i]);
+        }
+    }
+}
