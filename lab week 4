@@ -1,6 +1,15 @@
 package com.company;
 
 public class Main {
+/*Lab 4 
+            1. Write a program that reads in a sequence of characters and prints them
+            in reverse order. Use a stack.
+            2. Add an interface function void STACKmultipop(int k) that pops k elements from
+            the stack, or until the stack is empty.
+            3. Show how to implement a queue using two stacks.
+            4. Bonus. Create Stack or Queue with a generic.
+            Example: Stack<String> students;
+            Stack<Integer> scores;*/
 
     public static void main(String[] args) {
         /*Queue queue = new Queue(5);
