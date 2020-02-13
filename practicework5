@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Musakulov</title>
+    <style>
+        .myname
+        {
+            font-size: 45px;
+            font-family: sans-serif;
+            color: black;
+        }
+        .class1
+        {
+            background:  url("https://www.arcgis.com/sharing/rest/content/items/19bb7e54c50740bfaae99bde42508937/resources/1567937236215.jpeg?w=2630");
+            width: 79%;
+            margin-left: 200px;
+            height: 600px;
+        }
+        .class2
+        {
+            display: flex;
+            justify-content: space-between;
+            background-color: sandybrown;
+            color: Black;
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+        }
+        .flex1
+        {
+            display: flex;
+            justify-content: flex-start;
+            background-color: orange;
+            border: 5px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 5px;
+        }
+        .flex2
+        {
+            display: flex;
+            justify-content: space-between;
+            background-color: orange;
+            border: 5px;
+            padding: 5px;
+        }
+        .body
+        {
+            background-color: black;
+        }
+        .flex_items
+        {
+            font-size: 35px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="class1">
+        <div class="myname">
+            <center>
+                Aslan Musakulov
+            </center>
+        </div>
+    </div>
+    <div class="class2">
+        <div class="flex_items">About me</div>
+        <div class="flex_items">My hobbies and interests</div>
+    </div>
+    <div class="flex1">
+        firstName: Aslan<br>
+        lastname: Musakulov<br>
+        Birth date: 28.01.2002<br>
+        Family: Dad(Malik),<br>
+        Thebest(Aigul),<br>
+        and Sis(Dinara).
+    </div>
+    <div class="flex2">
+        
+    </div>
+</body>
+</html>
