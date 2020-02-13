@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .flex1
+        {
+            display: flex;
+            justify-content: flex-start;
+            background-color: black;
+            color: white;
+            border: 5px solid aqua;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 5px;
+        }
+        .flex2
+        {
+            display: flex;
+            justify-content: flex-end;
+            background-color: black;
+            color: white;
+            border: 5px solid aqua;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+        }
+        .main
+        {
+            border:10px solid aqua;
+            background-color: darkred;
+            padding: 50px;
+        }
+        .body
+        {
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="main">
+        <div class="flex1">
+            <img src="https://i.pinimg.com/originals/77/58/98/775898795f1f4b52e10cbe6175c127b4.jpg" width="100px" height="100px" style="border-radius: 50%;"> 
+            <span><b> Scriptonite </b><br> When you release your album ? </span>
+        </div><br>
+        <div class="flex2">
+            <span style="text-align: right;"><b> Truwer </b><br> Very soon bro. </span>
+            <img src="https://289118.selcdn.ru/media/artists/0/0/1/1489/20200107041034_large_truwer.jpeg" width="100px" height="100px" style="border-radius: 50%;" class="image">
+        </div><br>
+        <div class="flex1">
+            <img src="https://i.pinimg.com/originals/77/58/98/775898795f1f4b52e10cbe6175c127b4.jpg" width="100px" height="100px" style="border-radius: 50%;">
+            <span><b> Scriptonite </b><br> Ok, ok. </span>
+        </div><br>
+    </div>
+</body>
+</html>
+----------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #333;
+         display: flex;
+         justify-content: flex-start;
+        }
+
+
+        li a, .dropbtn {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+         background-color: red;
+        }
+
+        li.dropdown {
+         display: inline-block;
+        }
+
+        .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+        }
+
+        .dropdown-content a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropbtn">My Favourite Musicians</a>
+          <div class="dropdown-content">
+            <a href="https://www.youtube.com/results?search_query=Scriptonite">Scriptonite</a>
+            <a href="https://www.youtube.com/results?search_query=Truwer">Truwer</a>
+            <a href="https://www.youtube.com/results?search_query=Dequine">Dequine</a>
+            <a href="https://www.youtube.com/results?search_query=Darkhan+Juzz">Darkhan Juzz</a>
+          </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">My Favourite Musics</a>
+            <div class="dropdown-content">
+              <a href="https://www.youtube.com/watch?v=ROCmxSoqlHY">Chains</a>
+              <a href="https://www.youtube.com/watch?v=jJIaNsj1ZMg">Party</a>
+              <a href="https://www.youtube.com/watch?v=TdrL3QxjyVw">Summertime Sadness</a>
+              <a href="https://www.youtube.com/watch?v=9WbCfHutDSE">Dangerous woman</a>
+              <a href="https://www.youtube.com/watch?v=IS1ZWKBALX4">My Sun and Moon</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
+----------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         body{
+            display:flex;
+            flex-direction: row;
+            border: 1px solid black;            
+         }
+        .page1{
+           width: 33.5%;
+           height: 700px;
+           background-image:linear-gradient(lightcoral, lightseagreen);
+        }
+        .page2{
+           width: 33%;
+           height: 700px;
+           background-image:linear-gradient(lightcoral, lightseagreen);   
+           display: flex;
+           justify-content: center;
+        }
+        .page3{
+           width: 33.5%;
+           height: 700px;
+           background-image:linear-gradient(lightcoral, lightseagreen);
+        }
+        .word{                          
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           float: left;
+           width: 37%;
+           margin-top: 10px;      
+           margin-left: 20px;     
+        }
+        .input{           
+           text-align: center;
+           float: left;
+           margin-top: 10px;
+           width: 50%; 
+           font-family: Verdana, Geneva, Tahoma, sans-serif;    
+           margin-left: 10px;              
+        }
+        h2{
+           font-family: Verdana, Geneva, Tahoma, sans-serif; 
+           color: lightcoral;
+           margin-left: 20px;
+           
+        }
+        .submit{
+           display: flex;
+           justify-content: center;
+           width: 20%;
+           padding-top: 20px;
+           margin-left: 100px;                      
+        }
+        .page1{
+           opacity: 1;
+        }
+        .page1:hover{
+           opacity: 0.9;
+           transition: .5s ease;           
+        }
+        .page3{
+           opacity: 1;
+        }
+        .page3:hover{
+           opacity: 0.9;
+           transition: .5s ease;           
+        }
+    </style>    
+</head>
+<body>
+   <div class="page1"></div> 
+   <div class="page2">
+     <div style="width: 410px; height: 650px; background-color: lightseagreen;">
+      <h2><span style="border: 1px solid lightseagreen; background-color: lightseagreen;">Online Registration Form</span></h2>
+      <div class="word">
+         <label>First Name:</label>
+      </div>
+      <div class="input">
+         <input type="text" name="fname">
+      </div>
+      <div class="word">
+         <label>Last Name:</label>
+      </div>
+      <div class="input">
+         <input type="text" name="lname">
+      </div>
+      <div class="word">
+         <label>Username:</label>
+      </div>
+      <div class="input">
+         <input type="text" name="user">
+      </div>
+      <div class="word">
+         <label>Email:</label>
+      </div>
+      <div class="input">
+         <input type="email" name="email">
+      </div>
+      <div class="word">
+         <label>Password:</label>
+      </div>
+      <div class="input">
+         <input type="password" name="psw">
+      </div>
+      <div class="word">
+         <label>Confirm Password:</label>
+      </div>
+      <div class="input">
+         <input type="password" name="cpsw">
+      </div>
+      <div class="word">
+         <label>Birth Date:</label>
+      </div>
+      <div class="input">
+         <input type="date" name="bday" style="width: 150px;">
+      </div>
+      <div class="word">
+         <label>Gender:</label>
+      </div>
+      <div class="input">
+         <input type="radio" name="gender" value="male"><span>Male</span>
+         <input type="radio" name="gender" value="female"><span>Female</span> 
+         
+      </div>
+      <div class="submit">
+         <input type="submit" name="submit" value="Submit" style="width: 100px; height: 30px;font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: darksalmon;">
+         <input type="reset" name="reset" value="Reset" style="width: 100px; height: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-left: 20px;background-color: darksalmon; ">
+      </div>
+      <div style="margin-top: 30px;">
+         <img src="C:\Users\admin\Downloads\bezos.jpg" width="210px" height="250px" style="float: left; margin-left: 10px;">
+         <span style="float: left; margin-left: 10px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 30px;">Work Hard, <br>Have Fun,<br> Make History.</span>
+         <span style="float: left; margin-left: 10px; font-family: 'Courier New', Courier, monospace; margin-top: 10px; font-size: large; text-align: center;">Jeff Bezos</span>
+      </div>
+     </div>
+   </div>
+   <div class="page3"></div>   
+</body>
+</html>
