@@ -7,26 +7,243 @@
 </head>
 <body>
     <div class="main">
-        <div class="finding">Find the song</div>
+        <div class="finding">
+            <center>Find the song</center>
+        </div>
         <div class="searching">
             <div class="album">
-                    <b>Album</b>
-            </div>
-            <div class="albuminput">
-                <input name="albuminputinput" type="text" placeholder="Here">
+                <input class="albuminputinput" name="albuminputinput" type="text" placeholder="Album">
             </div>
             <div class="song">
-                    <b>Songs</b>
-            </div>
-            <div class="songinput">
-                <input name="songinputinput" type="text" placeholder="Here">
+                <input class="songinputinput" name="songinputinput" type="text" placeholder="Song">
             </div>
         </div>
         <div class="just1">
-            <a href="https://musica36.ru/">Link to Scriptonite's label site</a>
+            <a href="https://musica36.ru/">Musica36</a>
         </div>
-        <div class="just2">4</div>
+        <div class="just2">
+            If you do not find song, do not care.
+        </div>
     </div>
 </body>
 </html>
 -------------CSS---------------------
+body
+{
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-image: url("https://img.muz1.tv/img/2019-06-03/fmt_89_24_1559560859_foto-1.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.main
+{
+    display: grid;
+    background-color: black;
+    opacity: 70%;
+    width: 850px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.finding
+{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.searching
+{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+.albuminputinput
+{
+    border-radius: initial;
+}
+.songinputinput
+{
+    border-radius: initial;
+}
+.just1
+{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.just2
+{
+    color: white;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+--------------task2-----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice work 7</title>
+</head>
+<body>
+    <div class="mendeleyev">
+        <div class="1">H</div>
+        <div>He</div>
+        <div>Li</div>
+        <div>Be</div>
+        <div>B</div>
+        <div>C</div>
+        <div>N</div>
+        <div>O</div>
+        <div>F</div>
+        <div>Ne</div>
+        <div>Na</div>
+        <div>Mg</div>
+        <div>Al</div>
+        <div>Si</div>
+        <div>P</div>
+        <div>S</div>
+        <div>Cl</div>
+        <div>Ar</div>
+        <div>K</div>
+        <div>Ca</div>
+        <div>Sc</div>
+        <div>Ti</div>
+        <div>V</div>
+        <div>Cr</div>
+        <div>Mn</div>
+        <div>Fe</div>
+        <div>Co</div>
+        <div>Ni</div>
+        <div>Cu</div>
+        <div>Zn</div>
+        <div>Ga</div>
+        <div>Ge</div>
+        <div>As</div>
+        <div>Se</div>
+        <div>Br</div>
+        <div>Kr</div>
+        <div>Rb</div>
+        <div>Sr</div>
+        <div>Y</div>
+        <div>Zr</div>
+        <div>Nb</div>
+        <div>Mo</div>
+        <div>Tc</div>
+        <div>Ru</div>
+        <div>Rh</div>
+        <div>Pd</div>
+        <div>Ag</div>
+        <div>Cd</div>
+        <div>In</div>
+        <div>Sn</div>
+        <div>Sb</div>
+        <div>Te</div>
+        <div>I</div>
+        <div>Xe</div>
+        <div>Cs</div>
+        <div>Ba</div>
+        <div>La</div>
+        <div>Hf</div>
+        <div>Ta</div>
+        <div>W</div>
+        <div>Re</div>
+        <div>Os</div>
+        <div>Ir</div>
+        <div>Pt</div>
+        <div>Au</div>
+        <div>Hg</div>
+        <div>TI</div>
+        <div>Pb</div>
+        <div>Bi</div>
+        <div>Po</div>
+        <div>At</div>
+        <div>Rn</div>
+        <div>Fr</div>
+        <div>Ra</div>
+        <div class="65">Ac</div>
+        <div class="66">Rf</div>
+        <div class="67">Db</div>
+        <div class="68">Sg</div>
+        <div class="69">Bh</div>
+        <div class="70">Hs</div>
+        <div class="71">Mt</div>
+        <div class="72">Ds</div>
+        <div class="73">Rg</div>
+        <div class="74">Cn</div>
+        <div class="75">Nh</div>
+        <div class="76">FI</div>
+        <div class="77">Mc</div>
+        <div class="78">Lv</div>
+        <div class="79">Ts</div>
+        <div class="80">Og</div>
+        <div class="81">Ce</div>
+        <div class="82">Pr</div>
+        <div class="83">Nd</div>
+        <div class="84">Pm</div>
+        <div class="85">Sm</div>
+        <div class="86">Eu</div>
+        <div class="87">Gd</div>
+        <div class="88">Tb</div>
+        <div class="89">Dy</div>
+        <div class="90">Ho</div>
+        <div class="91">Er</div>
+        <div class="92">Tm</div>
+        <div class="93">Yb</div>
+        <div class="94">Lu</div>
+        <div class="95">Th</div>
+        <div class="96">Pa</div>
+        <div class="97">U</div>
+        <div class="98">Np</div>
+        <div class="99">Pu</div>
+        <div class="100">Am</div>
+        <div class="101">Cm</div>
+        <div class="102">Bk</div>
+        <div class="103">Cf</div>
+        <div class="104">Es</div>
+        <div class="105">Fm</div>
+        <div class="106">Md</div>
+        <div class="107">No</div>
+        <div class="108">Lr</div>
+    </div>
+</body>
+</html>
+--------------task2css--------------
+.mendeleyev
+{
+    display: grid;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
