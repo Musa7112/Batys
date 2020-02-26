@@ -18,7 +18,7 @@ public class Main
         {
             int p = partition(array,low,p-1);
             quikSortRecursively(array,low,p-1);
-            quikSortRecursively(array,,high);
+            quikSortRecursively(array,p+1,high);
         }
     }
 
@@ -46,6 +46,8 @@ public class Main
                 swap(array,,border++);
             }
         }
+        swap(array,low,border-1);
+        return border-1;
     }
 
     public static void main(String[] args)
