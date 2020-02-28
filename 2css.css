@@ -1,0 +1,45 @@
+body
+{
+    background-color: black;
+}
+.main
+{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.main div
+{
+    color: white;
+    height: 300px;
+    margin-top: 300px;
+    margin-left: 40px;
+    padding-top: 300px;
+    padding-right: 33px;
+    text-align: center;
+}
+.home
+{
+    background-image: url("https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2F403759ceb95fa0d3265bdaa980b2e82b.600x600x1.jpg");
+    background-repeat: no-repeat;
+}
+.party
+{
+    background-image: url("https://t2.genius.com/unsafe/300x301/https%3A%2F%2Fimages.genius.com%2F22f5412526e658ad8e085e0fe694fbf8.617x618x1.jpg");
+    background-repeat: no-repeat;
+}
+.uroy
+{
+    background-image: url("https://t2.genius.com/unsafe/300x0/https%3A%2F%2Fimages.genius.com%2Fad00fb85928e48698fb5acefc8c970ac.1000x1000x1.jpg");
+    background-repeat: no-repeat;
+}
+.urob
+{
+    background-image: url("https://t2.genius.com/unsafe/300x0/https%3A%2F%2Fimages.genius.com%2F6837e0a5e05334a87b6602bc922904e0.1000x1000x1.jpg");
+    background-repeat: no-repeat;
+}
+.dvadva04
+{
+    background-image: url("https://t2.genius.com/unsafe/300x0/https%3A%2F%2Fimages.genius.com%2Fee94d5159fb3beb36175993b425473bf.1000x1000x1.jpg");
+    background-repeat: no-repeat;
+}
