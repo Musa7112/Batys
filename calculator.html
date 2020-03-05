@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MusaCalculator</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        .main
+        {
+            display: grid;
+            grid-template-columns:repeat(5,1fr);
+            grid-template-rows:repeat(4,1fr);
+            width: 300px;
+            height: 150px;
+            margin-top: 200px;
+        }
+        .main>div
+        {
+            background-color: blueviolet;
+            text-align: center;
+            border:1px solid darkblue;
+            padding:5px;
+        }
+        .otvet
+        {
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="main">
+            <div class="otvet"><input ></div>
+            <div class="obnul"><button>C</button></div>
+            <div class="umnozh"><button>*</button></div>
+            <div class="delite"><button>/</button></div>
+            <div class="minus"><button>-</button></div>
+            <div class="plus"><button>+</button></div>
+            <div class="rovno"><button>=</button></div>
+            <div class="alti"><button>6</button></div>
+            <div class="zheti"><button>7</button></div>
+            <div class="segiz"><button>8</button></div>
+            <div class="dokuz"><button>9</button></div>
+            <div class="sifir"><button>0</button></div>
+            <div class="bir"><button>1</button></div>
+            <div class="eki"><button>2</button></div>
+            <div class="ush"><button>3</button></div>
+            <div class="tort"><button>4</button></div>
+            <div class="bes"><button>5</button></div>
+        </div>
+    </center>
+</body>
+</html>
