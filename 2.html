@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="2css.css">
+</head>
+<body style="background-color: black">
+
+<div style="text-align:center">
+    <h2>Tabbed Image Gallery</h2>
+    <p>Click on the images below:</p>
+</div>
+
+<!-- The five columns -->
+<div class="row">
+    <div class="column">
+        <img src="https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2F403759ceb95fa0d3265bdaa980b2e82b.600x600x1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="https://t2.genius.com/unsafe/300x301/https%3A%2F%2Fimages.genius.com%2F22f5412526e658ad8e085e0fe694fbf8.617x618x1.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="https://t2.genius.com/unsafe/300x0/https%3A%2F%2Fimages.genius.com%2Fad00fb85928e48698fb5acefc8c970ac.1000x1000x1.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="https://t2.genius.com/unsafe/300x0/https%3A%2F%2Fimages.genius.com%2F6837e0a5e05334a87b6602bc922904e0.1000x1000x1.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="https://t2.genius.com/unsafe/300x0/https%3A%2F%2Fimages.genius.com%2Fee94d5159fb3beb36175993b425473bf.1000x1000x1.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+</div>
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+</div>
+
+<script>
+    function myFunction(imgs)
+    {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
